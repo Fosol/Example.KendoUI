@@ -1,0 +1,25 @@
+﻿@section scripts {
+<script id="window-change-password-template" type="text/x-kendo-template">
+    <div class="container k-edit-form-container">
+        <input type="hidden" name="CreatedOn" value="#:(new Date())#" data-bind="value: CreatedOn" />
+        <input type="hidden" name="State" value="#:1#" />
+        <div class="cell">
+            <div class="k-edit-label"><label for="Password">Password</label></div>
+            <div class="k-edit-field" data-container-for="Password">
+                <input name="Password" type="Password" class="input k-input k-textbox" data-bind="value: Password" placeholder="*********" required />
+            </div>
+            <div class="k-edit-label"><label>Confirm Password</label></div>
+            <div class="k-edit-field">
+                <input name="ConfirmPassword" type="Password" class="input k-input k-textbox" required placeholder="*********" />
+            </div>
+        </div>
+        <div class="k-edit-buttons k-state-default">
+            <a class="k-button k-button-icontext k-primary" data-bind="click: save"><span class="k-icon k-update" title="Save"></span>Save</a>
+            <a class="k-button k-button-icontext k-grid-cancel" data-bind="click: cancel"><span class="k-icon k-cancel" title="Cancel"></span>Cancel</a>
+        </div>
+    </div>
+</script>
+<script type="text/javascript" src="~/js/User/index.js"></script>
+}
+
+<div id="grid-users"></div>

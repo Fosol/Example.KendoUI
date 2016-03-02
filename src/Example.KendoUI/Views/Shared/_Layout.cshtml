@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/kendo-ui/css/kendo.common.core.min.css" />
+    <link rel="stylesheet" href="~/lib/kendo-ui/css/kendo.common.min.css" />
+    <link rel="stylesheet" href="~/lib/kendo-ui/css/kendo.blueopal.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("head", false)
+</head>
+<body>
+    <header>
+        @RenderSection("header", false)
+    </header>
+    <content>
+        @RenderBody()
+    </content>
+    <footer>
+        @RenderSection("footer", false)
+    </footer>
+    <script type="text/javascript" src="~/lib/kendo-ui/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/kendo-ui/js/kendo.all.min.js"></script>
+    <script type="text/javascript" src="~/lib/lis/src/lis.js"></script>
+    <script type="text/javascript" src="~/lib/lis/src/lis.model.js"></script>
+    <script type="text/javascript" src="~/lib/lis/src/lis.linq.js"></script>
+    <script type="text/javascript" src="~/lib/lis/src/lis.kendo.js"></script>
+    <script type="text/javascript" src="~/lib/lis/src/lis.kendo.grid.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>
